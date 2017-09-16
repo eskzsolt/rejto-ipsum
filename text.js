@@ -45,7 +45,7 @@ const text = [
   "Maga olyan nagy állat, hogy vadászni kellene.",
   "A bolond ember eléggé logikus, csak az épelméjűek bírálata felületes.",
   "A kíváncsi turista olyan, mint a szerelmes férj. Mindent elhisz és semmit sem lát.",
-  "Az nevet, aki először üt."
+  "Az nevet, aki először üt.",
   "Aki korán kel, az aranyat akar lelni. Nem? Aki aranyat lelne, az gyanús, mert szívesen válna tőkepénzessé. De kire lehet az ilyesmit rábizonyítani? Ne vádaskodjunk vaktában.",
   "Egy igazság akkor is fontos, ha nincs semmi értelme.",
   "A kitalált hazugság soha nem ér annyit, mint az ügyes igazmondás.",
