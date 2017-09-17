@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Mogra:400);
+@import url(https://fonts.googleapis.com/css?family=Kalam:400);
+/*@import url(https://fonts.googleapis.com/css?family=Special+Elite:400);*/
+
+body {
+  padding:auto;
+  margin: auto;
+}
+
+#title {
+    padding: calc(3rem + 2vw) calc(0.7rem + 0.2vw) calc(0.4rem + 1vw) calc(0.7rem + 0.2vw);
+    margin: 0;
+    font-weight:normal;
+    font-family: 'Mogra', cursive;
+    font-size:calc(2rem + 1.5vw);
+    text-align: center;
+}
+.select-disabled {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+#main {
+    padding: calc(0.7rem + 0.2vw) calc(0.7rem + 0.2vw) calc(0.7rem + 0.2vw) calc(0.7rem + 0.2vw);
+    font-family: 'Kalam', monospace;
+    font-size: calc(0.8rem + 0.2vw);
+    color: #333;
+    display: inline-block;
+    position: absolute;
+}
+
+#container {
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.buttons {
+    padding: calc(0.4rem + 1vw) calc(0.7rem + 0.2vw) calc(0.4rem + 1vw) calc(0.7rem + 0.2vw);
+    font-size:calc(0.8rem + 0.8vw);
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+
+.buttons:hover {
+  color: red;
+}
+
+#refresh:active {
+  transform: rotate(90deg);
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+}
