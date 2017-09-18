@@ -3,4 +3,4 @@
 [![Rejtő ipsum](https://i.imgur.com/QnMBlSh.jpg)](https://eskzsolt.github.io/rejto-ipsum/)
 
 ## :pushpin:
-> ultiple issues on IE
+> Multiple issues on IE
