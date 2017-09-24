@@ -1,6 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Mogra:400);
-@import url(https://fonts.googleapis.com/css?family=Kalam:400);
-/*@import url(https://fonts.googleapis.com/css?family=Special+Elite:400);*/
+@import url(https://fonts.googleapis.com/css?family=Mogra:400&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Kalam:400&subset=latin,latin-ext);
+/*@import url(https://fonts.googleapis.com/css?family=Special+Elite:400&subset=latin,latin-ext);*/
 
 body {
   padding:auto;
