@@ -1,8 +1,5 @@
 const local_jokes = text.slice();
 
-// Internet Explorer 6-11
-const isIE = /*@cc_on!@*/false || !!document.documentMode;
-
 const containedBy = function(ar, q) {
   return ar.filter(function(b) {return b === q}).length > 0 ? true : false;
 }
@@ -15,13 +12,13 @@ function newJokes() {
   for (let i = 0; i < 20; i+=1) {
     let pick = local_jokes[Math.floor(Math.random() * local_jokes.length)];
     //if (!isIE) {
-      while (selected_jokes.includes(pick)) {
+      //while (selected_jokes.includes(pick)) {
+        //pick = local_jokes[Math.floor(Math.random() * local_jokes.length)];
+      //}
+    //} else {
+      while (containedBy(selected_jokes, pick)) {
         pick = local_jokes[Math.floor(Math.random() * local_jokes.length)];
       }
-    //} else {
-    //  while (containedBy(selected_jokes, pick)) {
-    //    pick = local_jokes[Math.floor(Math.random() * local_jokes.length)];
-    //  }
     //}
     selected_jokes.push(i % 10 === 0 && i !== 0 ? '<br><br>' + pick : pick); 
   }
