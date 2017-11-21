@@ -4,9 +4,7 @@ const local_jokes = text.slice();
 const isIE = /*@cc_on!@*/false || !!document.documentMode;
 
 const containedBy = function(ar, q) {
-  return ar.filter(function(b) {
-    return b === q;
-  }).length > 0 ? true : false;
+  return ar.filter(function(b) {return b === q}).length > 0 ? true : false;
 }
 
 function newJokes() {
