@@ -16,15 +16,15 @@ function newJokes() {
     
   for (let i = 0; i < 20; i+=1) {
     let pick = local_jokes[Math.floor(Math.random() * local_jokes.length)];
-    if (!isIE) {
+    //if (!isIE) {
       while (selected_jokes.includes(pick)) {
         pick = local_jokes[Math.floor(Math.random() * local_jokes.length)];
       }
-    } else {
-      while (containedBy(selected_jokes, pick)) {
-        pick = local_jokes[Math.floor(Math.random() * local_jokes.length)];
-      }
-    }
+    //} else {
+    //  while (containedBy(selected_jokes, pick)) {
+    //    pick = local_jokes[Math.floor(Math.random() * local_jokes.length)];
+    //  }
+    //}
     selected_jokes.push(i % 10 === 0 && i !== 0 ? '<br><br>' + pick : pick); 
   }
 
