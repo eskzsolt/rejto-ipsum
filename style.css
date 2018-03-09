@@ -5,6 +5,7 @@
 body {
   padding:auto;
   margin: auto;
+  overflow:scroll;
 }
 
 #title {
