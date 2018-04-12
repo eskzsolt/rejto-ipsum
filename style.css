@@ -53,7 +53,7 @@ body {
   color: red;
 }
 
-#refresh:active {
+#refresh:hover {
   transform: rotate(90deg);
 }
 
