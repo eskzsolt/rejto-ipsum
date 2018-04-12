@@ -57,6 +57,10 @@ body {
   transform: rotate(180deg);
 }
 
+#refresh:active {
+  transform: rotate(180deg);
+}
+
 .outer {
     display: table;
     position: absolute;
