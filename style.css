@@ -43,7 +43,7 @@ body {
 
 .buttons {
     padding: calc(0.4rem + 1vw) calc(0.7rem + 0.2vw) calc(0.4rem + 1vw) calc(0.7rem + 0.2vw);
-    font-size:calc(0.8rem + 0.8vw);
+    font-size:calc(0.8rem + 0.5vw);
     cursor: pointer;
     text-align: center;
     display: inline-block;
