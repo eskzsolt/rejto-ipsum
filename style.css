@@ -52,11 +52,11 @@ body {
 .buttons:hover {
   color: red;
 }
-
+/*
 #refresh:hover {
   transform: rotate(180deg);
 }
-
+*/
 #refresh:active {
   transform: rotate(180deg);
 }
