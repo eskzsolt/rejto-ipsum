@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Mogra:400&subset=latin,latin-ext);
 @import url(https://fonts.googleapis.com/css?family=Kalam:400&subset=latin,latin-ext);
-/*@import url(https://fonts.googleapis.com/css?family=Special+Elite:400&subset=latin,latin-ext);*/
 
 body {
   padding:auto;
@@ -16,6 +15,7 @@ body {
     font-size:calc(2rem + 1.5vw);
     text-align: center;
 }
+
 .select-disabled {
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -51,14 +51,6 @@ body {
 
 .buttons:hover {
   color: red;
-}
-/*
-#refresh:hover {
-  transform: rotate(180deg);
-}
-*/
-#refresh:active {
-  transform: rotate(180deg);
 }
 
 .outer {
