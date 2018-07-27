@@ -1,0 +1,24 @@
+{
+  "name": "rejto-ipsum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eskzsolt/rejto-ipsum.git"
+  },
+  "author": "Zsolt Eskulits",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eskzsolt/rejto-ipsum/issues"
+  },
+  "homepage": "https://github.com/eskzsolt/rejto-ipsum#readme",
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  }
+}
