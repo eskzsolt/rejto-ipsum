@@ -29,6 +29,5 @@ const text = [
   "Ide hallgasson, rablovics úr.",
   "Az élet olyan, mint egy nyári ruha mellénye: rövid és céltalan.",
   "Galamb nekirepült a falnak, de a következő pillanatban már úgy vágta szájon a vitorlamestert, hogy ez meglepetésében lenyelt egy negyed font bagót, ami a szájában volt, és percekig csuklott utána.",
-  "Menjen, ha akar. És akarjon, ha mehet."
 
 ]
