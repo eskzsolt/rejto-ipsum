@@ -12,9 +12,9 @@
     let current_selection = [];
 
     for (let i = 0; i < 20; i+=1) {
-      let pick = local_jokes[Math.floor(Math.random() * local_jokes.length)];
+      let pick = local_jokes[~~(Math.random() * local_jokes.length)];
       while (containedBy(selected_jokes, pick)) {
-        pick = local_jokes[Math.floor(Math.random() * local_jokes.length)];
+        pick = local_jokes[~~(Math.random() * local_jokes.length)];
       }
       selected_jokes.push(i % 10 === 0 && i !== 0 ? '<br><br>' + pick : pick);
     }
