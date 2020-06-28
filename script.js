@@ -1,52 +1,36 @@
-(function() {
+(function () {
+  const $ = window.$
+  const localQuotes = quotes.slice()
 
-  const local_jokes = text.slice();
+  function newQuotes () {
+    const selection = []
 
-  const containedBy = function(ar, q) {
-    return ar.filter(function(b) {return b === q}).length > 0 ? true : false;
-  }
-
-  function newJokes() {
-
-    let selected_jokes = [];
-    let current_selection = [];
-
-    for (let i = 0; i < 20; i+=1) {
-      let pick = local_jokes[~~(Math.random() * local_jokes.length)];
-      while (containedBy(selected_jokes, pick)) {
-        pick = local_jokes[~~(Math.random() * local_jokes.length)];
+    for (let i = 0; i < 20; i += 1) {
+      let pick = localQuotes[~~(Math.random() * localQuotes.length)]
+      while (selection.includes(pick)) {
+        pick = localQuotes[~~(Math.random() * localQuotes.length)]
       }
-      selected_jokes.push(i % 10 === 0 && i !== 0 ? '<br><br>' + pick : pick);
+      selection.push(i % 10 === 0 && i !== 0 ? '<br><br>' + pick : pick)
     }
 
-    return selected_jokes.join(' ');
-
+    return selection.join(' ')
   }
 
-  function addJokes() {
-    return document.getElementById("main").innerHTML += '<br><br>' + newJokes();
-  }
+  $('#main').html(newQuotes())
 
-  document.getElementById("main").innerHTML = newJokes();
+  $('#refresh').on('click', function () {
+    $('#main').html(newQuotes())
+  })
 
-  let myEl = document.getElementById('refresh');
+  $('#add').on('click', function () {
+    $('#main').html((i, currentContents) => currentContents + '<br><br>' + newQuotes())
+  })
 
-  myEl.addEventListener('click', function() {
-    document.getElementById("main").innerHTML = newJokes();
-  }, false);
-
-  document.getElementById("add").addEventListener('click', function() {
-    document.getElementById("main").innerHTML = addJokes();
-  }, false);
-
-
-  $(document).ready(function() {
-    var clipboard = new Clipboard('#copy');
-    clipboard.on('success', function(e) {
-      e.clearSelection();
-      $("#copy, #main").fadeOut('slow', function() {
-        }).fadeIn();
-    });
-  });
-
-})();
+  $(document).ready(function () {
+    var clipboard = new window.Clipboard('#copy')
+    clipboard.on('success', function (e) {
+      e.clearSelection()
+      $('#copy, #main').fadeOut('slow', function () {}).fadeIn()
+    })
+  })
+})()
